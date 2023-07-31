@@ -1,0 +1,11 @@
+{
+  "name": "quiz-personnality-harry-potter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
