@@ -5,6 +5,10 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
+@import './pages/welcome_screen.scss';
+@import './pages/question_screen.scss';
+@import './pages/end_screen.scss';
+
 @import './utils/mixin.scss';
 @import './utils/responsive.scss';
 @import './utils/variables.scss';

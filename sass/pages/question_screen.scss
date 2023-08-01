@@ -1,0 +1,15 @@
+.question_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}

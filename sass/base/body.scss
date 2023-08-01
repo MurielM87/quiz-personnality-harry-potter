@@ -8,12 +8,10 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   line-height: 12px;
-  background: #000;
+  background-image: url(../../assets/background.jpg);
+  background-position: fixed;
+  background-size: 100%;
   color: #eee;
-  min-height: 100vh;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {

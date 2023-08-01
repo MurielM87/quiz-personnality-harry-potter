@@ -10,12 +10,10 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   line-height: 12px;
-  background: #000;
+  background-image: url(../../assets/background.jpg);
+  background-position: fixed;
+  background-size: 100%;
   color: #eee;
-  min-height: 100vh;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
@@ -33,6 +31,73 @@ footer {
 p {
   line-height: 1.7;
   margin: 1.5rem 0;
+}
+
+.welcome_screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome_screen h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 30px auto;
+}
+.welcome_screen h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 40px auto;
+}
+.welcome_screen h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+.welcome_screen button {
+  width: 25%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+.question_screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.question_screen h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.question_screen ul li {
+  list-style: none;
+}
+
+.end_screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.end_screen h1 {
+  font-size: 32px;
+  color: yellow;
+  text-align: center;
+}
+.end_screen .house {
+  font-size: 27px;
+  text-align: center;
+}
+.end_screen .house span {
+  font-size: 30px;
+  color: red;
+}
+.end_screen button {
+  width: 25%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px auto;
 }
 
 /*# sourceMappingURL=style.css.map */
