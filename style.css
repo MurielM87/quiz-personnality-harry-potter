@@ -33,15 +33,40 @@ p {
   margin: 1.5rem 0;
 }
 
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.barre {
+  width: 35%;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(217deg, rgba(230, 250, 10, 0.8), rgba(250, 5, 5, 0) 70.71%), linear-gradient(127deg, rgba(241, 8, 8, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(249, 158, 13), rgba(0, 0, 255, 0) 70.71%);
+  background-size: 400% 400%;
+  margin: auto;
+  margin-top: 20px;
+  animation: changeColor 5s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 .welcome_screen {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.welcome_screen h1 {
-  font-size: 32px;
-  text-align: center;
-  margin: 30px auto;
 }
 .welcome_screen h2 {
   font-size: 25px;
@@ -79,9 +104,14 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-.end_screen h1 {
+.end_screen h2 {
   font-size: 32px;
   color: yellow;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.end_screen h3 {
+  font-size: 25px;
   text-align: center;
 }
 .end_screen .house {
@@ -98,6 +128,44 @@ p {
   border-radius: 5px;
   padding: 10px 20px;
   margin: 20px auto;
+}
+
+.shadow {
+  position: relative;
+  margin: 200px auto 0;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #262626);
+}
+
+.shadow:before,
+.shadow:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+  filter: blur(20px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

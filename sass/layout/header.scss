@@ -1,0 +1,29 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto;
+  color: yellow;
+  text-transform: uppercase;
+}
+.barre {
+    width: 35%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(217deg, rgba(230, 250, 10, 0.8), rgba(250, 5, 5, 0) 70.71%),            linear-gradient(127deg, rgba(241, 8, 8, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(249, 158, 13), rgba(0,0,255,0) 70.71%);
+    background-size: 400% 400%;
+    margin: auto;
+    margin-top: 20px;
+    animation: changeColor 5s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
