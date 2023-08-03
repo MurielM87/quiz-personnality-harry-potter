@@ -15,22 +15,24 @@
     position: relative;
     width: 500px;
     margin: 20px auto;
-    animation-delay: -3s;
-    animation: openImg 6s ease-in-out;
+    animation: openImg 7s ease-in-out;
   }
 }
 @keyframes open {
     0% {
         opacity: 0;
+        width: 100%;
     }
     10% {
         opacity: 1;
     }
     95% {
         opacity: 0.95;
+        width: 100%;
     }
     100% {
         opacity: 0;
+        width: 0%;
     }
 }
 @keyframes openImg {

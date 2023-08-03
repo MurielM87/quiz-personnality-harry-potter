@@ -1,15 +1,19 @@
 .question_screen {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 
     h2 {
         font-size: 25px;
         text-align: center;
+        margin-bottom: 20px;
     }
     ul {
         li {
             list-style: none;
+            line-height: 30px;
+            font-size: 30px;
+            text-align: center;
         }
     }
 }
