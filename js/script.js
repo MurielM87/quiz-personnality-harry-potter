@@ -104,10 +104,5 @@ window.addEventListener('load', init);
 let box = document.getElementById('box');
 moment.locale('fr');
 let m = moment();
-m = m.format("dddd D MMMM YYYY")
+m = m.format("dddd D MMMM YYYY, H:mm:ss")
 box.innerText = m;
-
-//pour ajouter du texte entre []
-//m = m.format('[nous sommes en] YYYY');
-//let box = document.getElementById('box');
-//box.innerText = m;

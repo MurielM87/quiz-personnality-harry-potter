@@ -57,6 +57,21 @@ const questions = [{
         img: '../../assets/q3-4.jpg',
         house: 'slytherin'
     }]
+}, {
+    question: 'Dans le chemin de Traverse, quel magasin t'a le plus plu ?',
+    answers: [{
+        title: 'magasin d'acccessoires de Quidditch',
+        house: 'hufflepuff'
+    }, {
+        title: 'Fleury et Bott',
+        house: 'ravenclaw'
+    }, {
+        title: 'Weaslley, Farces pour sorciers facétieux',
+        house: 'gryffondor'
+    }, {
+        title: 'Ollivander - Fabricants de baguettes magiques',
+        house: 'slytherin'
+    }]
 }, 
 {
     question: 'Quel est ton lieu favori à Poudlard ?',
@@ -138,6 +153,21 @@ const questions = [{
         title: 'La Dame Grise',
         house: 'ravenclaw'
     }]
+},{
+    question: 'Laquelle de ces quatre couleurs préfères-tu ?',
+    answers: [{
+        title: 'Vert',
+        house: 'slytherin'
+    }, {
+        title: 'Jaune',
+        house: 'ravenclaw'
+    }, {
+        title: 'Bleu',
+        house: 'gryffondor'
+    }, {
+        title: 'Rouge',
+        house: 'hufflepuff'
+    }]
 },
 {
     question: 'Quel est ton wagon dans le Pourlard Express ?',
@@ -153,6 +183,22 @@ const questions = [{
     }, {
         title: 'Wagon 4',
         house: 'slytherin'
+    },
+{
+    question: 'On t'annonce que tu es admis à Poudlard, comment réagis-tu ?',
+    answers: [{
+        title: 'Je vais apprendre la magie pour faire le bien !',
+        house: 'gryffondor'
+    }, {
+        title: 'Je vais devenir le plus puissant des sorciers !',
+        house: 'slytherin'
+    }, {
+        title: 'Je vais pouvoir apprendre pleins de nouvelles choses !',
+        house: 'hufflepuff'
+    }, {
+        title: 'Je vais bien rigoler avec tous mes amis !',
+        house: 'ravenclaw'
     }]
+},]
 }*/
 ];
