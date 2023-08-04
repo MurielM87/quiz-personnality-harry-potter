@@ -38,7 +38,7 @@ const questions = [{
         house: 'hufflepuff'
     }]
 },
-{
+/*{
     question: 'Quel est ton animal magique favori ?',
     answers: [{
         title: 'Hippogriffe',
@@ -154,5 +154,5 @@ const questions = [{
         title: 'Wagon 4',
         house: 'slytherin'
     }]
-}
+}*/
 ];

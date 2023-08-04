@@ -4,7 +4,8 @@
     justify-content: center;
 
     h2 {
-        font-size: 25px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 45px;
         text-align: center;
         margin: 40px auto;
     }
@@ -19,5 +20,10 @@
         border: none;
         margin: auto;
         cursor: pointer;
+        background: transparent;
+        
+        img {
+            border-radius: 50%;
+        }
     }
 }
