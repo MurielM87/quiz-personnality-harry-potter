@@ -33,34 +33,37 @@ p {
   margin: 1.5rem 0;
 }
 
-h1 {
-  font-size: 40px;
-  text-align: center;
-  margin: 30px auto;
-  color: yellow;
-  text-transform: uppercase;
+#title {
+  font-family: "Bad Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title h1 {
+  display: flex;
+  color: transparent;
+  font-size: 65px;
+}
+#title h1 span {
+  animation: animTitle 3s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
 }
 
-.barre {
-  width: 45%;
-  height: 7px;
-  border-radius: 5px;
-  background: linear-gradient(217deg, rgb(251, 0, 148), rgba(250, 5, 5, 0) 70.71%), linear-gradient(127deg, rgb(255, 255, 0), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(0, 255, 0), rgba(0, 0, 255, 0) 70.71%);
-  background-size: 400% 400%;
-  margin: auto;
-  margin-top: 20px;
-  animation: changeColor 2s ease-in-out infinite;
-}
-
-@keyframes changeColor {
+@keyframes animTitle {
   0% {
-    background-position: 0 50%;
+    color: #fff;
+    filter: blur(2px) hue-rotate(0deg);
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
-  50% {
-    background-position: 100% 50%;
+  30%, 70% {
+    color: #fff;
+    filter: blur(2px) hue-rotate(360deg);
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
   100% {
-    background-position: 0 50%;
+    color: transparent;
+    box-shadow: none;
+    filter: blur(2px) hue-rotate(0deg);
   }
 }
 footer {
@@ -86,13 +89,14 @@ footer #box {
 }
 .welcome_screen h2 {
   font-family: "Dancing Script", cursive;
+  color: yellow;
   font-size: 45px;
   text-align: center;
   margin: 40px auto;
 }
 .welcome_screen h3 {
   width: 40%;
-  margin: 20px auto 60px;
+  margin: 20px auto;
   line-height: 50px;
   text-align: center;
   font-size: 20px;
